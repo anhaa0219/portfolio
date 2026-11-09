@@ -2,7 +2,7 @@ import Image from "next/image";
 import { Archive } from "@/components/Archive";
 import { ContributionGraph, type Day } from "@/components/ContributionGraph";
 import { HazeImage } from "@/components/HazeImage";
-import { ArrowDown, ArrowUpRight, GitHubMark } from "@/components/Icons";
+import { ArrowDown, ArrowUpRight, GitHubMark, MailIcon } from "@/components/Icons";
 import { LavaField } from "@/components/LavaField";
 import { SlotDemo } from "@/components/SlotDemo";
 import contributions from "@/data/contributions.json";
@@ -103,8 +103,12 @@ export default function Home() {
               aria-label="Featured work: Aroma Beauty Clinic & Spa"
               className="block"
               style={{
-                maskImage: "linear-gradient(to bottom, #000 38%, transparent 88%)",
-                WebkitMaskImage: "linear-gradient(to bottom, #000 38%, transparent 88%)",
+                maskImage:
+                  "linear-gradient(to bottom, #000 34%, transparent 78%), linear-gradient(to left, transparent 0, #000 10%)",
+                WebkitMaskImage:
+                  "linear-gradient(to bottom, #000 34%, transparent 78%), linear-gradient(to left, transparent 0, #000 10%)",
+                maskComposite: "intersect",
+                WebkitMaskComposite: "source-in",
               }}
             >
               <HazeImage
@@ -325,7 +329,15 @@ export default function Home() {
               </p>
               <div className="flex flex-wrap items-center gap-x-8 gap-y-4 md:col-span-6 md:col-start-7 md:justify-end">
                 <a href={contact} target={profile.email ? undefined : "_blank"} rel="noreferrer" className="btn-molten text-lg">
-                  {profile.email ? profile.email : "GitHub profile"} <ArrowUpRight size={16} />
+                  {profile.email ? (
+                    <>
+                      <MailIcon size={18} /> {profile.email}
+                    </>
+                  ) : (
+                    <>
+                      GitHub profile <ArrowUpRight size={16} />
+                    </>
+                  )}
                 </a>
                 {profile.email && (
                   <a href={profile.github} target="_blank" rel="noreferrer" className="link-arrow">

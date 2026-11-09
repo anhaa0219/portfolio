@@ -23,7 +23,7 @@ STORY: Visitor sees the name and the real Aroma site rising out of the heat, und
 
 FIRST VIEWPORT: Full-bleed lava canvas. Top: monogram left, four links, email action right. Bottom: "Ankhbayar" at viewport-wide display scale with "Munkhbaatar", the role line and the Cyrillic name beneath. Right, from about a fifth of the way down: the Aroma screenshot under heat haze, dissolving into the lava under the name (masked fade instead of a hard fold crop), captioned as the featured work. Primary action: "See the Aroma case study" plus email link in nav.
 
-FORM: Pinned by the user's template brief ("Creative Director": molten reds drift like a lava lamp beneath film grain while case studies glide past in a slow heat haze), so it overrides the roll; the roll ran afterwards only to record a reference and its assignment was not adopted. seed: seed:d4e0d598d5402a36
+FORM: Pinned by the user's template brief ("Creative Director": molten reds drift like a lava lamp beneath film grain while case studies glide past in a slow heat haze), so it overrides the roll; the roll ran afterwards only to record a reference and its assignment was not adopted. seed:d4e0d598d5402a36
 Signature interaction: case-study screenshots glide on scroll and their heat-haze displacement cools to sharp as they reach the viewport centre; archive rows reveal a hazed preview that follows the cursor; a slot-grid demonstration of Aroma's booking logic.
 
 FINISH: unreviewed and undocumented is unfinished; this build ends with the finish review, the verdict, DESIGN.md, and every shipping raster carrying its provenance
