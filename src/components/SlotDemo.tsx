@@ -138,7 +138,7 @@ export function SlotDemo() {
                 return (
                   <div
                     key={`${lane}-${c}`}
-                    className="h-7 rounded-[3px] transition-colors duration-300"
+                    className="h-7 rounded-[2px] transition-colors duration-300"
                     style={{
                       background: inPreview
                         ? "var(--amber)"
@@ -172,7 +172,7 @@ export function SlotDemo() {
                   onBlur={() => setHover(null)}
                   onClick={() => book(c)}
                   aria-label={ok ? `Book at ${label}` : `${label} unavailable`}
-                  className="font-data group flex h-14 flex-col items-center justify-start rounded-[3px] pt-1 text-[0.68rem] leading-none text-bone transition-colors duration-200 enabled:hover:bg-[rgb(255_154_74/0.14)] disabled:cursor-not-allowed disabled:text-soot disabled:line-through"
+                  className="font-data group flex h-14 flex-col items-center justify-start rounded-[2px] pt-1 text-[0.68rem] leading-none text-bone transition-colors duration-200 enabled:hover:bg-[rgb(255_154_74/0.14)] disabled:cursor-not-allowed disabled:text-soot disabled:line-through"
                 >
                   {c % 2 === 0 ? label : <span className="opacity-60">:30</span>}
                 </button>

@@ -1,4 +1,4 @@
-// One stroke family: 1.6px, round caps, 24px grid.
+// One stroke family: 1.8px, round caps, 24px grid.
 type P = { className?: string; size?: number };
 
 export function ArrowUpRight({ className, size = 14 }: P) {

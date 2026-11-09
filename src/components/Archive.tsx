@@ -83,13 +83,9 @@ export function Archive({ items }: { items: ArchiveItem[] }) {
         className="pointer-events-none fixed left-0 top-0 z-40 hidden w-[22rem] [@media(hover:hover)_and_(pointer:fine)]:block"
       >
         <div
-          className="overflow-hidden ring-1 ring-[var(--rule)] transition-[opacity,scale,filter] duration-500"
-          style={{
-            opacity: shown ? 1 : 0,
-            scale: shown ? "1" : "0.92",
-            filter: shown ? "blur(0)" : "blur(8px)",
-            transitionTimingFunction: "var(--ease-out)",
-          }}
+          className={`overflow-hidden ring-1 ring-[var(--rule)] transition-[opacity,scale,filter] duration-500 ease-[var(--ease-out)] motion-reduce:scale-100 motion-reduce:blur-none ${
+            shown ? "scale-100 opacity-100 blur-none" : "scale-[0.92] opacity-0 blur-sm"
+          }`}
         >
           {items
             .filter((i) => i.image)

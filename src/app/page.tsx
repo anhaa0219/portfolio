@@ -79,7 +79,7 @@ export default function Home() {
         {/* ---------- First viewport ---------- */}
         <section id="top" className="relative flex min-h-[min(100svh,64rem)] flex-col overflow-hidden pt-24 md:pt-28">
           <div className="wrap relative z-10 w-full md:pt-[8vh]">
-            <p className="max-w-[26ch] text-[1.3rem] leading-[1.45] text-bone md:max-w-[22ch] md:text-[1.45rem]">
+            <p className="max-w-[26ch] text-[1.4rem] leading-[1.45] text-bone md:max-w-[22ch]">
               I build booking flows, payments and the admin screens behind them.
             </p>
             <div className="mt-8 flex flex-wrap items-center gap-x-6 gap-y-4">
@@ -169,7 +169,7 @@ export default function Home() {
               </dl>
             </div>
 
-            <p className="mt-12 max-w-[52ch] text-[1.25rem] leading-[1.55] md:mt-16 md:text-[1.4rem]">{aroma.summary}</p>
+            <p className="mt-12 max-w-[52ch] text-[1.4rem] leading-[1.55] md:mt-16">{aroma.summary}</p>
 
             {/* Screens glide past in the heat */}
             <div className="mt-[var(--section)] space-y-[clamp(5rem,12vw,10rem)]">
@@ -292,7 +292,7 @@ export default function Home() {
               <h2 id="about-title" className="font-display text-[clamp(2.4rem,6.4vw,6rem)] font-extrabold leading-[0.95] tracking-[-0.04em]">
                 Loves to learn
               </h2>
-              <div className="mt-10 max-w-[60ch] space-y-5 text-[1.125rem] text-ash">
+              <div className="mt-10 max-w-[60ch] space-y-5 text-ash">
                 <p>
                   I&apos;m {profile.firstName}, a full-stack developer from Mongolia. I wrote my first JavaScript exercise in
                   June 2026. Five months later I had built a booking platform with group scheduling, QPay payments and
@@ -324,7 +324,7 @@ export default function Home() {
               Have something to build<span className="text-lava">?</span>
             </h2>
             <div className="mt-12 grid gap-10 md:grid-cols-12 md:gap-6">
-              <p className="max-w-[44ch] text-[1.2rem] md:col-span-5">
+              <p className="max-w-[44ch] text-[1.4rem] leading-[1.45] md:col-span-5">
                 I&apos;m open to a developer role and to freelance work: booking systems, online shops, internal tools.
               </p>
               <div className="flex flex-wrap items-center gap-x-8 gap-y-4 md:col-span-6 md:col-start-7 md:justify-end">

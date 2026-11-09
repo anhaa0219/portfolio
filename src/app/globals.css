@@ -5,6 +5,7 @@
   --ground-2: #150806;
   --deep: #5c0905;
   --ember: #c4150b;
+  --heat-mid: #a3120a;
   --lava: #ff3a1c;
   --amber: #ff9a4a;
   --bone: #f4e6dc;
@@ -193,4 +194,11 @@ p {
 /* Heat haze: wrapper gets its SVG filter from HazeImage */
 .haze {
   will-change: filter, transform;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .btn-molten:hover,
+  .link-arrow:hover svg {
+    transform: none;
+  }
 }

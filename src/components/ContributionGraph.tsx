@@ -4,7 +4,7 @@ import { useState } from "react";
 
 export type Day = [date: string, count: number, level: number];
 
-const HEAT = ["rgb(244 230 220 / 0.06)", "#5c0905", "#a3120a", "#ff3a1c", "#ff9a4a"];
+const HEAT = ["rgb(244 230 220 / 0.06)", "var(--deep)", "var(--heat-mid)", "var(--lava)", "var(--amber)"];
 const MONTHS = ["Jan", "Feb", "Mar", "Apr", "May", "Jun", "Jul", "Aug", "Sep", "Oct", "Nov", "Dec"];
 const DOW = ["Sun", "Mon", "Tue", "Wed", "Thu", "Fri", "Sat"];
 
@@ -91,10 +91,9 @@ function Row({
             onMouseEnter={() => setActive(d)}
             onMouseLeave={() => setActive(null)}
             onClick={() => setActive(d)}
-            className="aspect-square w-full rounded-[2px] outline-offset-1 transition-transform duration-200 hover:scale-125"
+            className="aspect-square w-full rounded-[2px] outline-offset-1 transition-transform duration-200 hover:scale-125 motion-reduce:hover:scale-100"
             style={{
               background: HEAT[d[2]],
-              boxShadow: d[2] >= 3 ? `0 0 10px -1px ${HEAT[d[2]]}` : undefined,
             }}
           />
         );

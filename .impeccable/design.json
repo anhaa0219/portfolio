@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 2,
+  "generatedAt": "2026-11-09T04:10:42.182437+00:00",
+  "title": "Design System: Ankhbayar Munkhbaatar",
+  "extensions": {
+    "colorMeta": {
+      "ground": {
+        "role": "neutral",
+        "displayName": "Ember Ground",
+        "canonical": "#0c0504",
+        "tonalRamp": [
+          "#050201",
+          "#0c0504",
+          "#150806",
+          "#241210",
+          "#3a2420",
+          "#5a423c",
+          "#8a7570",
+          "#c9bcb8"
+        ]
+      },
+      "ground-2": {
+        "role": "neutral",
+        "displayName": "Lifted Ground",
+        "canonical": "#150806",
+        "tonalRamp": [
+          "#0c0504",
+          "#150806",
+          "#22100c",
+          "#341c17",
+          "#4c302a",
+          "#6e5149",
+          "#9c8079",
+          "#d1c2be"
+        ]
+      },
+      "deep": {
+        "role": "tertiary",
+        "displayName": "Deep Ember",
+        "canonical": "#5c0905",
+        "tonalRamp": [
+          "#1f0301",
+          "#3a0603",
+          "#5c0905",
+          "#7d1a12",
+          "#a03a2e",
+          "#c26a5d",
+          "#dfa39a",
+          "#f4d9d4"
+        ]
+      },
+      "ember": {
+        "role": "tertiary",
+        "displayName": "Ember",
+        "canonical": "#c4150b",
+        "tonalRamp": [
+          "#3a0603",
+          "#6a0b05",
+          "#9a1008",
+          "#c4150b",
+          "#dc3f2e",
+          "#ec7364",
+          "#f6a9a0",
+          "#fcdcd7"
+        ]
+      },
+      "heat-mid": {
+        "role": "tertiary",
+        "displayName": "Heat Mid",
+        "canonical": "#a3120a",
+        "tonalRamp": [
+          "#2e0402",
+          "#560805",
+          "#7d0d07",
+          "#a3120a",
+          "#c4382a",
+          "#dc6d5f",
+          "#efa59c",
+          "#fadad6"
+        ]
+      },
+      "lava": {
+        "role": "primary",
+        "displayName": "Lava",
+        "canonical": "#ff3a1c",
+        "tonalRamp": [
+          "#4a0d04",
+          "#8a1a08",
+          "#c4240f",
+          "#ff3a1c",
+          "#ff6a50",
+          "#ff9884",
+          "#ffc4b8",
+          "#ffe8e2"
+        ]
+      },
+      "amber": {
+        "role": "secondary",
+        "displayName": "Amber",
+        "canonical": "#ff9a4a",
+        "tonalRamp": [
+          "#4a2408",
+          "#80400f",
+          "#c06a26",
+          "#ff9a4a",
+          "#ffb070",
+          "#ffc796",
+          "#ffdcbc",
+          "#fff0e2"
+        ]
+      },
+      "bone": {
+        "role": "neutral",
+        "displayName": "Bone",
+        "canonical": "#f4e6dc",
+        "tonalRamp": [
+          "#3a302a",
+          "#5e514a",
+          "#857670",
+          "#ab9c94",
+          "#cdbdb3",
+          "#e3d3c8",
+          "#f4e6dc",
+          "#fcf6f2"
+        ]
+      },
+      "ash": {
+        "role": "neutral",
+        "displayName": "Ash",
+        "canonical": "#c9aa9c",
+        "tonalRamp": [
+          "#2e231e",
+          "#4c3c35",
+          "#6e5a51",
+          "#977e72",
+          "#c9aa9c",
+          "#d9c1b5",
+          "#e8d8cf",
+          "#f6eee9"
+        ]
+      },
+      "soot": {
+        "role": "neutral",
+        "displayName": "Soot",
+        "canonical": "#8a6a5e",
+        "tonalRamp": [
+          "#1e1512",
+          "#352620",
+          "#523c33",
+          "#8a6a5e",
+          "#a3877c",
+          "#bca59c",
+          "#d6c6bf",
+          "#efe6e2"
+        ]
+      },
+      "rule": {
+        "role": "neutral",
+        "displayName": "Ember Rule",
+        "canonical": "rgb(255 90 50 / 0.18)"
+      },
+      "veil": {
+        "role": "neutral",
+        "displayName": "Ember Veil",
+        "canonical": "rgb(12 5 4 / 0.72)"
+      },
+      "heat-cold": {
+        "role": "neutral",
+        "displayName": "Cold Cell",
+        "canonical": "rgb(244 230 220 / 0.06)"
+      }
+    },
+    "typographyMeta": {
+      "display": {
+        "displayName": "Display",
+        "purpose": "The hero first name only, at viewport-wide scale over the live field."
+      },
+      "headline": {
+        "displayName": "Headline",
+        "purpose": "Section titles; the closing call scales to clamp(2.8rem, 9vw, 9rem)."
+      },
+      "title": {
+        "displayName": "Title",
+        "purpose": "Sub-section titles inside a section."
+      },
+      "title-sm": {
+        "displayName": "Title Small",
+        "purpose": "Archive project names and screenshot captions (1.25rem mobile)."
+      },
+      "lede": {
+        "displayName": "Lede",
+        "purpose": "Opening statements and summaries, 1.2 to 1.45rem."
+      },
+      "body": {
+        "displayName": "Body",
+        "purpose": "Running text, 38 to 60ch."
+      },
+      "label": {
+        "displayName": "Label",
+        "purpose": "Nav, controls, legends, captions, dl terms."
+      },
+      "data": {
+        "displayName": "Data",
+        "purpose": "Dates, years, durations, stack strings; tabular numerals only."
+      },
+      "data-xs": {
+        "displayName": "Data XS",
+        "purpose": "Grid axis labels and slot times."
+      }
+    },
+    "shadows": [
+      {
+        "name": "legibility-halo",
+        "value": "text-shadow: 0 4px 40px rgb(12 5 4 / 0.45)",
+        "purpose": "Ground-coloured halo on display type over the live field only. Not a glow."
+      }
+    ],
+    "motion": [
+      {
+        "name": "ease-out",
+        "value": "cubic-bezier(0.16, 1, 0.3, 1)",
+        "purpose": "The only easing; all state and transform transitions."
+      },
+      {
+        "name": "state-color",
+        "value": "0.2s to 0.5s",
+        "purpose": "Colour/background/border changes on hover and press."
+      },
+      {
+        "name": "transform",
+        "value": "0.4s",
+        "purpose": "Button lift (2px), arrow shift (3px up-right)."
+      },
+      {
+        "name": "grain-jitter",
+        "value": "0.9s steps(6) infinite",
+        "purpose": "Film-grain tile jitter; removed under reduced motion."
+      },
+      {
+        "name": "lava-fade-in",
+        "value": "2000ms opacity",
+        "purpose": "WebGL canvas fades in over its CSS fallback."
+      },
+      {
+        "name": "preview-lerp",
+        "value": "0.14 per frame, tilt clamp 6deg",
+        "purpose": "Archive preview trails the cursor; exact tracking with no tilt under reduced motion."
+      },
+      {
+        "name": "haze",
+        "value": "scale = 1 + heat * dist^1.6 (heat 22 to 26, x0.45 below 768px); glide 30 to 80px",
+        "purpose": "Heat-haze displacement cools to sharp at viewport centre; 0 under reduced motion."
+      },
+      {
+        "name": "reduced-motion",
+        "value": "prefers-reduced-motion: reduce",
+        "purpose": "Lava draws one static frame, grain stops, haze scale 0 and no glide, preview without lag, scroll-behavior auto."
+      }
+    ],
+    "breakpoints": [
+      {
+        "name": "sm",
+        "value": "640px"
+      },
+      {
+        "name": "md",
+        "value": "768px"
+      }
+    ]
+  },
+  "components": [
+    {
+      "name": "Molten Button",
+      "kind": "button",
+      "refersTo": "button-molten",
+      "description": "The single lava-filled primary action per view.",
+      "html": "<a class=\"ds-btn-molten\" href=\"#\">See the Aroma case study <svg width=\"16\" height=\"16\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M12 5v14M6 13l6 6 6-6\"/></svg></a>",
+      "css": ".ds-btn-molten{display:inline-flex;align-items:center;gap:.75rem;padding:.95rem 1.4rem .95rem 1.5rem;border-radius:2px;background:var(--lava);color:var(--ground);font-family:var(--font-body),system-ui,sans-serif;font-weight:600;text-decoration:none;transition:background .3s var(--ease-out),transform .4s var(--ease-out)}.ds-btn-molten:hover{background:var(--amber);transform:translateY(-2px)}.ds-btn-molten:active{transform:translateY(0)}.ds-btn-molten:focus-visible{outline:2px solid var(--amber);outline-offset:4px}"
+    },
+    {
+      "name": "Ring Button",
+      "kind": "button",
+      "refersTo": "button-ring",
+      "description": "Secondary action: hairline ember ring, amber on hover (nav Contact).",
+      "html": "<a class=\"ds-btn-ring\" href=\"#\">Contact <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a>",
+      "css": ".ds-btn-ring{display:inline-flex;align-items:center;gap:.5em;padding:.5rem 1rem;border:1px solid var(--rule);border-radius:2px;color:var(--bone);font-size:.875rem;text-decoration:none;transition:color .3s var(--ease-out),border-color .3s var(--ease-out)}.ds-btn-ring svg{transition:transform .4s var(--ease-out)}.ds-btn-ring:hover{color:var(--amber);border-color:var(--amber)}.ds-btn-ring:hover svg{transform:translate(3px,-3px)}.ds-btn-ring:focus-visible{outline:2px solid var(--amber);outline-offset:4px}"
+    },
+    {
+      "name": "Toggle Chip",
+      "kind": "chip",
+      "refersTo": "button-ring-pressed",
+      "description": "aria-pressed ring button; fills lava when pressed.",
+      "html": "<div class=\"ds-chips\"><button class=\"ds-chip\" aria-pressed=\"false\">Relaxing massage <span class=\"ds-chip-min\">60′</span></button><button class=\"ds-chip\" aria-pressed=\"true\">Jasmin Spa <span class=\"ds-chip-min\">90′</span></button></div>",
+      "css": ".ds-chips{display:flex;gap:.5rem;flex-wrap:wrap}.ds-chip{padding:.5rem 1rem;border:1px solid var(--rule);border-radius:2px;background:transparent;color:var(--bone);font:400 .875rem var(--font-body),system-ui,sans-serif;cursor:pointer;transition:color .3s,background .3s,border-color .3s}.ds-chip:hover{border-color:var(--amber)}.ds-chip[aria-pressed=true]{background:var(--lava);border-color:var(--lava);color:var(--ground)}.ds-chip:focus-visible{outline:2px solid var(--amber);outline-offset:4px}.ds-chip-min{font-family:var(--font-data),ui-monospace,monospace;font-variant-numeric:tabular-nums;opacity:.7}"
+    },
+    {
+      "name": "Arrow Link",
+      "kind": "custom",
+      "refersTo": "link-arrow",
+      "description": "Text link with trailing arrow that lifts up-right; bone primary, ash secondary.",
+      "html": "<span class=\"ds-links\"><a class=\"ds-link-arrow\" href=\"#\">Visit site <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a><a class=\"ds-link-arrow ds-link-ash\" href=\"#\">Code <svg width=\"14\" height=\"14\" viewBox=\"0 0 24 24\" fill=\"none\" stroke=\"currentColor\" stroke-width=\"1.8\" stroke-linecap=\"round\" stroke-linejoin=\"round\" aria-hidden=\"true\"><path d=\"M7 17 17 7M8 7h9v9\"/></svg></a></span>",
+      "css": ".ds-links{display:flex;gap:1.25rem;font-size:.875rem}.ds-link-arrow{display:inline-flex;align-items:center;gap:.5em;color:var(--bone);text-decoration:none;transition:color .3s var(--ease-out)}.ds-link-ash{color:var(--ash)}.ds-link-arrow svg{transition:transform .4s var(--ease-out)}.ds-link-arrow:hover{color:var(--amber)}.ds-link-arrow:hover svg{transform:translate(3px,-3px)}.ds-link-arrow:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "Navigation",
+      "kind": "nav",
+      "refersTo": "link-arrow",
+      "description": "Fixed translucent ground bar: monogram, four ash links, ring Contact.",
+      "html": "<nav class=\"ds-nav\"><a class=\"ds-mono\" href=\"#\">A<span>.</span>M</a><ul><li><a href=\"#\">Work</a></li><li><a href=\"#\">Archive</a></li><li><a href=\"#\">Activity</a></li><li><a href=\"#\">About</a></li></ul><a class=\"ds-nav-cta\" href=\"#\">Contact</a></nav>",
+      "css": ".ds-nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem;padding:1.25rem 1.5rem;background:linear-gradient(rgb(12 5 4/.92),rgb(12 5 4/.6));backdrop-filter:blur(12px)}.ds-mono{font:800 1.125rem var(--font-display),sans-serif;letter-spacing:-.04em;color:var(--bone);text-decoration:none}.ds-mono span{color:var(--lava)}.ds-nav ul{display:flex;gap:2rem;list-style:none;margin:0;padding:0;font-size:.875rem}.ds-nav ul a{color:var(--ash);text-decoration:none;transition:color .3s}.ds-nav ul a:hover{color:var(--bone)}.ds-nav-cta{padding:.5rem 1rem;border:1px solid var(--rule);border-radius:2px;color:var(--bone);font-size:.875rem;text-decoration:none;transition:border-color .3s,color .3s}.ds-nav-cta:hover{border-color:var(--amber);color:var(--amber)}.ds-nav a:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "Archive Row",
+      "kind": "custom",
+      "refersTo": "archive-row",
+      "description": "Ruled list row: mono date, project name, description with mono stack, links. Warms on hover.",
+      "html": "<ul class=\"ds-archive\"><li class=\"ds-row\"><span class=\"ds-row-date\">Sep 2026</span><h3 class=\"ds-row-name\">Food Delivery</h3><div><p class=\"ds-row-desc\">Full-stack ordering app with a separate API server.</p><p class=\"ds-row-stack\">Next.js · Express · MongoDB</p></div><div class=\"ds-row-links\"><a href=\"#\">Live ↗</a><a href=\"#\" class=\"ds-ash\">Code ↗</a></div></li></ul>",
+      "css": ".ds-archive{list-style:none;margin:0;padding:0;border-top:1px solid var(--rule)}.ds-row{display:grid;grid-template-columns:7rem minmax(0,1.1fr) minmax(0,1.4fr) 8.5rem;align-items:baseline;gap:.5rem 2rem;padding:1.75rem 0;border-bottom:1px solid var(--rule);transition:background .5s}.ds-row:hover{background:rgb(255 58 28/.05)}.ds-row-date{font:400 .875rem var(--font-data),ui-monospace,monospace;font-variant-numeric:tabular-nums;color:var(--ash)}.ds-row-name{margin:0;font:600 1.5rem var(--font-display),sans-serif;letter-spacing:-.02em;color:var(--bone);transition:color .3s}.ds-row:hover .ds-row-name{color:var(--amber)}.ds-row-desc{margin:0;color:var(--ash)}.ds-row-stack{margin:.25rem 0 0;font:400 .75rem var(--font-data),ui-monospace,monospace;color:var(--soot)}.ds-row-links{display:flex;gap:1.25rem;justify-content:flex-end;font-size:.875rem}.ds-row-links a{color:var(--bone);text-decoration:none}.ds-row-links a:hover{color:var(--amber)}.ds-row-links .ds-ash{color:var(--ash)}.ds-row-links a:focus-visible{outline:2px solid var(--amber);outline-offset:4px;border-radius:2px}"
+    },
+    {
+      "name": "Heat Ramp Legend",
+      "kind": "custom",
+      "refersTo": "heat-cell",
+      "description": "The five-step contribution heat ramp, cold to molten, on 2px cells with 3px gaps.",
+      "html": "<div class=\"ds-heat\"><span>Cool</span><i style=\"background:rgb(244 230 220/.06)\"></i><i style=\"background:#5c0905\"></i><i style=\"background:#a3120a\"></i><i style=\"background:#ff3a1c\"></i><i style=\"background:#ff9a4a\"></i><span>Molten</span></div>",
+      "css": ".ds-heat{display:flex;align-items:center;gap:.5rem;font-size:.875rem;color:var(--ash)}.ds-heat i{display:block;width:.75rem;height:.75rem;border-radius:2px;transition:transform .2s}.ds-heat i:hover{transform:scale(1.25)}"
+    },
+    {
+      "name": "Hazed Frame",
+      "kind": "card",
+      "refersTo": "heat-cell",
+      "description": "Screenshot frame: square corners, 1px ember ring, overscanned image under SVG heat haze (displacement wired in JS).",
+      "html": "<figure class=\"ds-haze\"><div class=\"ds-haze-img\"></div><figcaption><h3>Group booking</h3><p>Everyone in a group starts together.</p></figcaption></figure>",
+      "css": ".ds-haze{margin:0;max-width:28rem}.ds-haze-img{aspect-ratio:16/10;overflow:hidden;box-shadow:0 0 0 1px var(--rule);background:radial-gradient(80% 60% at 50% 100%,var(--ember),var(--deep) 55%,var(--ground))}.ds-haze figcaption h3{margin:1rem 0 0;font:600 1.25rem var(--font-display),sans-serif;letter-spacing:-.02em;color:var(--bone)}.ds-haze figcaption p{margin:.75rem 0 0;color:var(--ash)}"
+    }
+  ],
+  "narrative": {
+    "northStar": "The Molten Field",
+    "overview": "**Creative North Star: \"The Molten Field\"**\n\nEverything sits on a live lava-lamp field: a fixed, slow WebGL metaball canvas in near-black and molten reds, under animated film grain. Content does not sit in cards. It surfaces out of the heat: type is laid straight on the field or on a translucent ember veil, and screenshots are seen through heat haze that cools to sharp as they reach the viewport centre. Heat is the single organising idea. The same ground-to-amber ramp drives the lava shader, the contribution graph and the booking-grid states, so \"hotter\" always means \"more\".\n\nDensity is low and editorial. Section breaks are large (the section rhythm runs from 6rem to 12rem), display type is extreme in scale and tightly tracked, and structure comes from hairline ember rules, not boxes. The palette is dark with one loud voice (lava) and a rare highlight (amber). Text is warm bone, never pure white.\n\nThe confirmed rejections are a card grid, a split hero with an avatar, a skills badge cloud, and soft glows.",
+    "keyCharacteristics": [
+      "A fixed WebGL lava field at z -10 with a film-grain overlay at z 60. Every surface is laid over it.",
+      "A heat ramp (ground, deep, ember, lava, amber) that encodes intensity everywhere.",
+      "Unbounded display at very large scale with negative tracking, Golos Text for reading, JetBrains Mono only for dates, times and counts.",
+      "2px corners, hairline ember rules and rings, and no cards.",
+      "Heat-haze imagery: SVG displacement that grows toward the viewport edges and falls to almost nothing at the centre."
+    ],
+    "rules": [
+      {
+        "name": "The Heat Means More Rule",
+        "body": "Colour intensity encodes quantity or state, always in ramp order: ground, deep, ember, heat-mid, lava, amber. Never use lava for something less intense than an element rendered in deep.",
+        "section": "colors"
+      },
+      {
+        "name": "The Rare Amber Rule",
+        "body": "Amber appears in response to the pointer or the keyboard (hover, focus, preview). At rest it shows only as the top of the heat ramp.",
+        "section": "colors"
+      },
+      {
+        "name": "The Mono Is Data Rule",
+        "body": "JetBrains Mono appears only on dates, times, counts, durations and stack strings, always with tabular numerals. Never use it for prose or headings.",
+        "section": "typography"
+      },
+      {
+        "name": "The Tight Heat Rule",
+        "body": "Unbounded at headline size and above tracks between -0.035em and -0.045em, with line-height at or below 1. Headings use `text-wrap: balance`.",
+        "section": "typography"
+      },
+      {
+        "name": "The No Soft Glow Rule",
+        "body": "Nothing radiates light. There are no coloured box-shadows, blur halos or neon edges. Heat is shown by fill colour and by the field itself.",
+        "section": "elevation"
+      },
+      {
+        "name": "The Field Shows Through Rule",
+        "body": "No section paints an opaque background. Use the 72% ember veil or less, so the lava stays alive behind every screen. The body has no background, so the fixed field at z -10 shows through.",
+        "section": "elevation"
+      }
+    ],
+    "dos": [
+      "Do lay every section over the live lava field, backed by the 72% ember veil at most.",
+      "Do encode intensity with the heat ramp in order (ground, deep, ember, heat-mid, lava, amber).",
+      "Do use 2px corners and 1px ember-rule borders, rings and dividers for all structure.",
+      "Do show screenshots through heat haze, sharp at the viewport centre, and dissolve hero imagery with a mask rather than a hard crop.",
+      "Do set dates, times, counts and stack strings in JetBrains Mono with tabular numerals.",
+      "Do keep one molten (lava-filled) button per view. Use ring buttons and arrow links for everything else.",
+      "Do give every ambient animation a static reduced-motion state."
+    ],
+    "donts": [
+      "Don't put content in cards, panels or a uniform project grid. Use ruled rows and the 12-column editorial grid.",
+      "Don't use soft glows, coloured box-shadows or neon edges. The only shadow is the ground-coloured halo on the display name.",
+      "Don't use pure white or pure black. Text is bone and the floor is ember ground.",
+      "Don't use amber as a resting fill for large areas. It is the hover, focus and peak colour.",
+      "Don't paint an opaque section background that hides the field.",
+      "Don't round corners beyond 2px on content components."
+    ]
+  }
+}

@@ -159,7 +159,7 @@ export function LavaField() {
         className="absolute inset-0"
         style={{
           background:
-            "radial-gradient(60% 50% at 75% 85%, #8a0f07 0%, transparent 70%), radial-gradient(40% 35% at 20% 100%, #5c0905 0%, transparent 70%), #0c0504",
+            "radial-gradient(60% 50% at 75% 85%, #c4150b 0%, transparent 70%), radial-gradient(40% 35% at 20% 100%, #5c0905 0%, transparent 70%), #0c0504",
         }}
       />
       <canvas
