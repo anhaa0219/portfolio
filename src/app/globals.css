@@ -1,26 +1,196 @@
 @import "tailwindcss";
 
 :root {
-  --background: #ffffff;
-  --foreground: #171717;
+  --ground: #0c0504;
+  --ground-2: #150806;
+  --deep: #5c0905;
+  --ember: #c4150b;
+  --lava: #ff3a1c;
+  --amber: #ff9a4a;
+  --bone: #f4e6dc;
+  --ash: #c9aa9c; /* secondary text, tinted from the ember ground */
+  --soot: #8a6a5e; /* tertiary, large/meta only */
+  --rule: rgb(255 90 50 / 0.18);
+  --veil: rgb(12 5 4 / 0.72);
+
+  --gutter: clamp(1rem, 4vw, 3.5rem);
+  --section: clamp(6rem, 14vw, 12rem);
+  --ease-out: cubic-bezier(0.16, 1, 0.3, 1);
 }
 
 @theme inline {
-  --color-background: var(--background);
-  --color-foreground: var(--foreground);
-  --font-sans: var(--font-geist-sans);
-  --font-mono: var(--font-geist-mono);
+  --color-ground: var(--ground);
+  --color-deep: var(--deep);
+  --color-ember: var(--ember);
+  --color-lava: var(--lava);
+  --color-amber: var(--amber);
+  --color-bone: var(--bone);
+  --color-ash: var(--ash);
+  --color-soot: var(--soot);
+  --font-display: var(--font-display);
+  --font-body: var(--font-body);
+  --font-data: var(--font-data);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+html {
+  background: var(--ground);
+  color: var(--bone);
+  scroll-behavior: smooth;
+  scrollbar-color: var(--ember) var(--ground);
+  -webkit-text-size-adjust: 100%;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  html {
+    scroll-behavior: auto;
   }
 }
 
 body {
-  background: var(--background);
-  color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  margin: 0;
+  min-height: 100svh;
+  /* no background here: the fixed lava layer at z-index -10 must show through */
+  color: var(--bone);
+  font-family: var(--font-body), system-ui, sans-serif;
+  font-size: 1.0625rem;
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: clip;
+}
+
+::selection {
+  background: var(--lava);
+  color: var(--ground);
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-track {
+  background: var(--ground);
+}
+::-webkit-scrollbar-thumb {
+  background: var(--deep);
+  border: 2px solid var(--ground);
+  border-radius: 10px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: var(--ember);
+}
+
+:focus-visible {
+  outline: 2px solid var(--amber);
+  outline-offset: 4px;
+  border-radius: 2px;
+}
+
+a {
+  color: inherit;
+  text-decoration-color: var(--ember);
+  text-underline-offset: 0.25em;
+  text-decoration-thickness: 1px;
+}
+
+.font-display {
+  font-family: var(--font-display), sans-serif;
+}
+.font-data {
+  font-family: var(--font-data), ui-monospace, monospace;
+  font-variant-numeric: tabular-nums;
+}
+
+h1,
+h2,
+h3 {
+  text-wrap: balance;
+}
+p {
+  text-wrap: pretty;
+}
+
+/* ---------- Film grain, fixed over everything ---------- */
+.grain {
+  position: fixed;
+  inset: -50%;
+  z-index: 60;
+  pointer-events: none;
+  opacity: 0.13;
+  mix-blend-mode: overlay;
+  background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='220' height='220'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.85' numOctaves='3' stitchTiles='stitch'/%3E%3CfeColorMatrix values='0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1.4 -0.2'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)'/%3E%3C/svg%3E");
+  animation: grain 0.9s steps(6) infinite;
+}
+
+@keyframes grain {
+  0% { transform: translate(0, 0); }
+  20% { transform: translate(-3%, 2%); }
+  40% { transform: translate(2%, -4%); }
+  60% { transform: translate(-4%, -1%); }
+  80% { transform: translate(3%, 3%); }
+  100% { transform: translate(0, 0); }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  .grain {
+    animation: none;
+  }
+}
+
+/* ---------- Shared building blocks ---------- */
+.wrap {
+  padding-inline: var(--gutter);
+  max-width: 100rem;
+  margin-inline: auto;
+}
+
+.veil {
+  background: var(--veil);
+  backdrop-filter: saturate(140%);
+}
+
+.rule {
+  border-color: var(--rule);
+}
+
+.link-arrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  text-decoration: none;
+  transition: color 0.3s var(--ease-out);
+}
+.link-arrow svg {
+  transition: transform 0.4s var(--ease-out);
+}
+.link-arrow:hover {
+  color: var(--amber);
+}
+.link-arrow:hover svg {
+  transform: translate(3px, -3px);
+}
+
+.btn-molten {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.75rem;
+  padding: 0.95rem 1.4rem 0.95rem 1.5rem;
+  border-radius: 2px;
+  background: var(--lava);
+  color: var(--ground);
+  font-weight: 600;
+  text-decoration: none;
+  transition:
+    background 0.3s var(--ease-out),
+    transform 0.4s var(--ease-out);
+}
+.btn-molten:hover {
+  background: var(--amber);
+  transform: translateY(-2px);
+}
+.btn-molten:active {
+  transform: translateY(0);
+}
+
+/* Heat haze: wrapper gets its SVG filter from HazeImage */
+.haze {
+  will-change: filter, transform;
 }
